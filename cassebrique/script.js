@@ -9,13 +9,15 @@ ball.style.borderRadius = '30px';
 
 
 ball.style.position = "relative";
-ball.style.left = "50%";
-ball.style.right = "50%";
-ball.style.top = "50%";
-ball.style.bottom = "50%";
-div.style.width = '100vw'; // 50% de la largeur de l'écran
-div.style.height = '100vh';
+ball.style.left = window.innerWidth/2;
+
+ball.style.top = window.innerHeight/2;
+
+div.style.width = window.innerWidth; // 50% de la largeur de l'écran
+div.style.height = window.innerHeight;
 
 document.body.appendChild(div);
 div.appendChild(ball);
 
+ball.positionX +=ball.ballspeed *ball.directionX
+ball.positionY += ball.ballspeed *ball.directionY
