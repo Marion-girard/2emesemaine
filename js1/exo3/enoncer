@@ -1,0 +1,17 @@
+
+#### 06 Exercice fonction ttc spread operator <a class="anchor" id="section721"></a>
+Ecrivez une fonction **sumTTC** qui prend 3 nombres arbitraires de prix HT et retourne la somme de ces prix TTC. La TVA est  un paramètre facultatif (20%).
+Vérifiez que le type des variables passées en paramètre ne posent pas de problème, utilisez **parseFloat**. Affichez les résultats avec au plus 2 chiffres après la virgule.
+
+Les prix HT seront donnés dans un tableau :
+
+```js
+const priceHT = [100.50, 200.8, 55.7];
+
+console.log(sumTTC(...priceHT));
+console.log(sumTTC(...priceHT, .3));
+
+// vérifiez le type des variables
+const badPriceHT = [100.50, "hello", 55.7];
+console.log(sumTTC(...badPriceHT, .3));
+```
