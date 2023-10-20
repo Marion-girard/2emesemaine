@@ -1,10 +1,10 @@
 class Ball {
-    constructor(Posx, Posy, color, directionX, directionY) {
+    constructor(Posx, Posy, color,) {
         this.Posx = Posx;
         this.Posy = Posy;
         this.color = color;
-        this.directionX = directionX;
-        this.directionY = directionY;
+        this.directionX = 1
+        this.directionY = 1
         
     }
 }
@@ -78,8 +78,8 @@ class Game {
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    const ball = new Ball(100,100,'red', -1 , 1)
-    const ball2 = new Ball(50, 50, 'blue', 1 , 1)
+    const ball = new Ball(100,100,'red')
+    const ball2 = new Ball(50, 50, 'blue')
     const ball3 = new Ball(50, 50, 'blue')
     
     const game = new Game()
